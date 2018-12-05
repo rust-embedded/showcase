@@ -1,7 +1,7 @@
 set -euxo pipefail
 
 main() {
-    true
+    pip install linkchecker --user
 }
 
 main

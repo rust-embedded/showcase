@@ -1,0 +1,15 @@
+[package]
+name = "showcase"
+version = "0.1.0"
+authors = ["Jorge Aparicio <jorge@japaric.io>"]
+edition = "2018"
+
+[dependencies]
+tera = "0.11.20"
+serde_derive = "1.0.80"
+serde = "1.0.80"
+serde_yaml = "0.8.8"
+maplit = "1.0.1"
+failure = "0.1.3"
+exitfailure = "0.5.1"
+fs_extra = "1.1.0"
