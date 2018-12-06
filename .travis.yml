@@ -1,6 +1,4 @@
 language: rust
-# TODO switch to stable (i.e. remove this line) when 1.31 is out
-rust: beta
 
 install:
   - bash ci/install.sh
