@@ -1,4 +1,7 @@
-/* Style based on the NEDERBURG Hugo theme (https://themes.gohugo.io/hugo-nederburg-theme/) */
+/* A partial re-implementation (derivative work) of the NEDERBURG Hugo theme (https://themes.gohugo.io/hugo-nederburg-theme/) */
+/* NEDERBURG is licensed under the MIT License. A copy of its license can be found at: */
+/* - https://github.com/rust-embedded/showcase/blob/master/LICENSE-NEDERBURG */
+/* - https://github.com/appernetic/hugo-nederburg-theme/blob/master/LICENSE */
 
 html {
     background-color: #2f3360;
