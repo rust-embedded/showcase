@@ -4,6 +4,25 @@ Awesome embedded projects by the Rust community!
 
 This project is developed and maintained by the [Resources team][team].
 
+## Submit your project
+
+First, read the [evaluation guidelines](./EVAL.md). The resources team will use
+these guidelines to evaluate your project, but you can also use the guidelines
+to improve your code and the structure of your project!
+
+When you are ready send a pull-request that
+
+- Adds information about your project at the end of `data.yml`. The file
+  contains comments that will help you fill in the information; and
+
+- Adds an image or videos of your project, if not using URLs, to the `assets`
+  folder.
+
+The resources team will review your submission and let you know if it has been
+accepted or not. If it doesn't get accepted this time but meets the hard
+requirements, we'll let you know how it can be improved so you can resubmit at a
+later date.
+
 ## License
 
 This project is distributed under the following licenses:
@@ -39,7 +58,6 @@ Copies of the licenses used by this project may also be found here:
 [MIT License Hosted]: https://opensource.org/licenses/MIT
 [Apache License v2.0 Hosted]: http://www.apache.org/licenses/LICENSE-2.0
 [CC-BY-SA v4.0 Hosted]: https://creativecommons.org/licenses/by-sa/4.0/legalcode
-
 
 ### Contribution
 
