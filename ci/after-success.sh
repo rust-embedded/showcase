@@ -5,7 +5,7 @@ main() {
     curl -Ls https://github.com/davisp/ghp-import/archive/master.tar.gz |
         tar --strip-components 1 -C ghp-import -xz
 
-    ./ghp-import/ghp_import.py book
+    ./ghp-import/ghp_import.py public
 
     # NOTE(+x) don't print $GH_TOKEN to the console!
     set +x
