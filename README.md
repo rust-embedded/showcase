@@ -8,6 +8,18 @@ This project is developed and maintained by the [Resources team][team].
 
 This project is distributed under the following licenses:
 
+- [`css/main.css`] is a partial re-implementation (derivative work) of the
+  [NEDERBURG Hugo theme], which is licensed under the MIT License. A copy of the
+  NEDERBURG license can be found at [LICENSE-NEDERBURG].
+
+[`css/main.css`]: ./css/main.css
+[NEDERBURG Hugo theme]: https://github.com/appernetic/hugo-nederburg-theme
+[LICENSE-NEDERBURG]: ./LICENSE-NEDERBURG
+
+- [`css/reset.css`] is licensed under the MIT License.
+
+[`css/reset.css`]: ./css/reset.css
+
 - The code samples and free-standing Cargo projects contained within this
   directory are licensed under the terms of both the [MIT License] and the
   [Apache License v2.0].

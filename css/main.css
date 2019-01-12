@@ -1,0 +1,268 @@
+/* A partial re-implementation (derivative work) of the NEDERBURG Hugo theme (https://themes.gohugo.io/hugo-nederburg-theme/) */
+/* NEDERBURG is licensed under the MIT License. A copy of its license can be found at: */
+/* - https://github.com/rust-embedded/showcase/blob/master/LICENSE-NEDERBURG */
+/* - https://github.com/appernetic/hugo-nederburg-theme/blob/master/LICENSE */
+
+html {
+    background-color: #2f3360;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+main a {
+    color: #000;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+main a:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+body > header {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+
+    color: #fff;
+    color: rgba(255, 255, 255, 0.75);
+
+    position: relative;
+}
+
+body > header a {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+body > header a:hover {
+    color: #fff;
+}
+
+.menu {
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+/* Mobile */
+li a {
+    display: block;
+}
+
+.menu li {
+    border-bottom: 1px solid white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.menu li:last-child {
+    border-bottom: none;
+}
+
+/* Desktop */
+@media only screen and (min-width: 800px) {
+    .menu {
+        font-size: 0.9em;
+        line-height: 2;
+        text-align: right;
+
+        position: absolute;
+        top: 1.5em;
+        right: 0;
+    }
+
+    .menu li {
+        border-bottom: none;
+        display: inline;
+    }
+
+    li a {
+        display: inline;
+    }
+
+    .menu li + li:before {
+        content: '/';
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+}
+
+.menu > span {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.title {
+    text-align: left;
+}
+
+.title > a {
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.title > p {
+    line-height: 1.5;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+
+    /* Centered with some margin on the sides */
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+}
+
+main header {
+    font-size: 2em;
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+article {
+    margin-bottom: 1.5em;
+}
+
+.vcenter {
+    background-color: #eaecf2;
+    color: #000;
+    color: rgba(0, 0, 0, 0.75);
+
+    padding-left: 5%;
+    padding-right: 5%;
+
+    /* MAGIC to make padding not affect width */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Vertically center contents */
+    display: flex;
+    justify-content: center;
+}
+
+.vcenter > section {
+    align-self: center;
+}
+
+.author {
+    margin-top: 0.5em;
+}
+
+.author > span {
+    font-weight: 700;
+}
+
+.description {
+    line-height: 1.5;
+
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+section > footer {
+    font-size: 0.9em;
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+figure {
+    /* Need by the `a > span` rule below */
+    position: relative;
+}
+
+/* https://stackoverflow.com/questions/796087/make-a-div-into-a-link */
+a > span {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Mobile: use the full width for the image and the text */
+figure {
+    background-size: cover;
+    background-position: 50%;
+    /* NOTE force the image to have a 4:3 aspect ratio */
+    padding-bottom: 75%;
+    width: 100%;
+}
+
+.video {
+    position: relative;
+    width: 100%;
+    /* NOTE aspect ratio */
+    padding-bottom: 75%;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.vcenter {
+    width: 100%;
+}
+
+section > header {
+    padding-top: 1em;
+}
+
+section > footer {
+    padding-bottom: 2em;
+}
+
+/* Desktop: place the figure and the text side-by-side */
+@media only screen and (min-width: 900px) {
+    figure {
+        width: 50%;
+        /* NOTE aspect ratio */
+        padding-bottom: 37.5%;
+    }
+
+    .video {
+        width: 50%;
+        /* NOTE aspect ratio */
+        padding-bottom: 37.5%;
+    }
+
+    .vcenter {
+        width: 50%;
+    }
+
+    /* Undo padding; we'll inherit some margin from the image height */
+    section > header {
+        padding-top: 0;
+    }
+
+    section > footer {
+        padding-bottom: 0;
+    }
+
+    article {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    /* Odd items: Swap text-image order */
+    .odd > .vcenter {
+        order: -1;
+    }
+}

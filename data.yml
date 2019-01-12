@@ -1,0 +1,37 @@
+  # Project name
+- name: Lorem Ipsum
+
+  # Project website
+  website: https://example.org
+
+  # Author name or username
+  author: Alice
+
+  # Author's GitHub / Twitter profile or personal website
+  author_website:  https://github.com/ghost
+
+  # SHORT description of the project (max 280 characters)
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pharetra purus. Sed laoreet lectus ut convallis molestie. Etiam suscipit vitae ante a finibus. Fusce aliquet viverra efficitur. Curabitur sit amet tellus risus."
+
+  # Image of the project
+  # if not a URL, place the file in the `assets` folder
+  image: https://via.placeholder.com/900x675
+
+  # OR a video of the project
+  # multiple video formats can be supplied
+  # if not a URL, place the file in the `assets` folder
+  # video:
+    # - ipsum.mp4
+
+- name: Ipsum Lorem
+
+  website: https://example.org
+
+  author: Bob
+
+  author_website:  https://github.com/ghost
+
+  description: "Vivamus varius cursus aliquam. Praesent scelerisque, neque efficitur luctus pharetra, augue urna tempus lectus, at ullamcorper sem purus et enim. Nam urna eros, ornare quis mi posuere, aliquam egestas turpis. Suspendisse quis mi viverra, malesuada justo ullamcorper, blandit risus"
+
+  # if not a URL, place the file in the `assets` folder
+  image: https://via.placeholder.com/900x675

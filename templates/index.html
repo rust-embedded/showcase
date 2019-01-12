@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link href="css/reset.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <meta charset="utf-8">
+    <meta name="description" content="Awesome embedded projects by the Rust community!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Embedded Rust Showcase</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="title">
+        <a href="">Embedded Rust Showcase</a>
+
+        <p>
+          Awesome embedded projects by the Rust community!
+        </p>
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="https://docs.rust-embedded.org">Learn</a>
+          </li>
+          <li>
+            <a href="https://github.com/rust-embedded/awesome-embedded-rust">Build</a>
+          </li>
+          <li>
+            <a href="https://github.com/rust-embedded/showcase">Submit</a>
+          </li>
+        </ul>
+      </div>
+
+    </header>
+
+    <main>
+    {% for project in projects %}
+      <article
+        class="{% if loop.index % 2 == 0 %}even{% else %}odd{% endif %}"
+        id="{{ project.name | slugify }}">
+      {% if project.video %}
+        <div class="video">
+          <video controls>
+          {% for source in project.video %}
+            <source src="{{ source }}" type="video/{{ source | split(pat='.') | last }}"/>
+          {% endfor %}
+          </video>
+        </div>
+      {% endif %}
+
+      {% if project.image %}
+        <figure style="background-image:url({{ project.image }})">
+          <a href="{{ project.website }}"><span></span></a>
+        </figure>
+      {% endif %}
+
+        <div class="vcenter">
+          <section>
+            <header>
+              <a href="#{{ project.name | slugify }}">{{ project.name }}</a>
+            </header>
+
+            <p class="author">
+              by <span><a href="{{ project.author_website }}">{{ project.author }}</a></span>
+            </p>
+
+            <p class="description">
+              {{ project.description }}
+            </p>
+
+            <footer>
+              <a href="{{ project.website }}">Learn more</a>
+            </footer>
+          </section>
+        </div>
+      </article>
+    {% endfor %}
+    </main>
+  </body>
+</html>

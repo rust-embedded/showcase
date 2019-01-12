@@ -1,7 +1,9 @@
 set -euxo pipefail
 
 main() {
-    true
+    cargo run
+
+    linkchecker public
 }
 
 main
