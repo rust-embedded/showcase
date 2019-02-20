@@ -6,7 +6,7 @@ This project is developed and maintained by the [Resources team][team].
 
 ## Submit your project
 
-First, read the [evaluation guidelines](./EVAL.md). The resources team will use
+First, read the (WIP!) [evaluation guidelines](./EVAL.md). The resources team will use
 these guidelines to evaluate your project, but you can also use the guidelines
 to improve your code and the structure of your project!
 
