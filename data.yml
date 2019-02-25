@@ -16,6 +16,12 @@
   description: "Vivamus varius cursus aliquam. Praesent scelerisque, neque efficitur luctus pharetra, augue urna tempus lectus, at ullamcorper sem purus et enim. Nam urna eros, ornare quis mi posuere, aliquam egestas turpis. Suspendisse quis mi viverra, malesuada justo ullamcorper, blandit risus"
   image: https://via.placeholder.com/900x675
 
+- name: I2c hal tools
+  website: https://github.com/mathk/i2c-hal-tools
+  author: mathk
+  author_website: https://github.com/mathk
+  description: "A small library aiming to add better abstraction when talking to i2c bus."
+
 # Template for new entries
 
   # Project name
