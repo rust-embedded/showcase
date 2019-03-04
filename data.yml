@@ -16,6 +16,13 @@
   description: "Vivamus varius cursus aliquam. Praesent scelerisque, neque efficitur luctus pharetra, augue urna tempus lectus, at ullamcorper sem purus et enim. Nam urna eros, ornare quis mi posuere, aliquam egestas turpis. Suspendisse quis mi viverra, malesuada justo ullamcorper, blandit risus"
   image: https://via.placeholder.com/900x675
 
+- name: ticklock
+  website: https://github.com/mathk/ticklock
+  author: mathk
+  author_website: https://github.com/mathk
+  description: "Utility library that provide common abstraction when dealing with clock setting and timer."
+  image: https://travis-ci.com/mathk/ticklock.svg?branch=master
+
 # Template for new entries
 
   # Project name
