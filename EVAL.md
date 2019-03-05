@@ -7,6 +7,9 @@ submissions.
 
 The project must fulfill these requirements or it will be rejected.
 
+- It's an application (binary crate) that runs on embedded hardware (Single
+  Board Computer, development board or custom PCB).
+
 - The main logic of the application must be written in Rust.
 
 - The source code must be public. Licensing terms are unimportant.

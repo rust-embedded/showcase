@@ -1,6 +1,11 @@
 # `showcase`
 
-Awesome embedded projects by the Rust community!
+> Awesome embedded projects by the Rust community!
+
+The embedded showcase is a [gallery] of open source embedded applications built
+by the Rust community.
+
+[gallery]: https://rust-embedded.github.io/showcase/
 
 This project is developed and maintained by the [Resources team][team].
 
