@@ -2,6 +2,7 @@
 
 use std::{fs, path::Path};
 
+use chrono::{Date, NaiveDate, Utc};
 use exitfailure::ExitFailure;
 use failure::{bail, SyncFailure};
 use fs_extra::dir::{self, CopyOptions};
@@ -29,6 +30,12 @@ fn main() -> Result<(), ExitFailure> {
 fn run() -> Result<(), failure::Error> {
     let tera = Tera::new("templates/**/*.html").map_err(SyncFailure::new)?;
     let mut projects: Vec<Project> = serde_yaml::from_str(&fs::read_to_string("data.yml")?)?;
+
+    // rotate the project list so that the first entry is not always shown at the top
+    // (we rebuild the site on a daily basis)
+    let start = Date::from_utc(NaiveDate::from_ymd(2019, 03, 04), Utc);
+    let nprojects = projects.len();
+    projects.rotate_left(((Utc::today() - start).num_days() as usize) % nprojects);
 
     for project in &mut projects {
         if project.description.len() > MAX_DESCRIPTION_SIZE {
