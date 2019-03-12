@@ -1,21 +1,5 @@
 # NOTE If submitting a new project add it to the end of the list, before the template
 
-# Dummy entry
-- name: Lorem Ipsum
-  website: https://example.org
-  author: Alice
-  author_website:  https://github.com/ghost
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pharetra purus. Sed laoreet lectus ut convallis molestie. Etiam suscipit vitae ante a finibus. Fusce aliquet viverra efficitur. Curabitur sit amet tellus risus."
-  image: https://via.placeholder.com/900x675
-
-# Another dummy entry
-- name: Ipsum Lorem
-  website: https://example.org
-  author: Bob
-  author_website:  https://github.com/ghost
-  description: "Vivamus varius cursus aliquam. Praesent scelerisque, neque efficitur luctus pharetra, augue urna tempus lectus, at ullamcorper sem purus et enim. Nam urna eros, ornare quis mi posuere, aliquam egestas turpis. Suspendisse quis mi viverra, malesuada justo ullamcorper, blandit risus"
-  image: https://via.placeholder.com/900x675
-
 - name: Rusty clock
   website: https://github.com/TeXitoi/rusty-clock
   author: TeXitoi
