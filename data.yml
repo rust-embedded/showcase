@@ -12,6 +12,16 @@
   author_website: https://www.wezm.net/
   description: A tri-color e-Paper display on a battery powered Raspberry Pi Zero W controlled by a Rust program using the embedded-hal ecosystem on Linux. The badge serves content over HTTP and allows people to increment a hello counter on the display.
   image: https://www.wezm.net/images/2019/badge-at-end-of-conference_thumb.jpg
+- name: Keyberon
+  website: https://github.com/TeXitoi/keyberon
+  author: TeXitoi
+  author_website: https://github.com/TeXitoi/
+  description: >
+    A hand wired ortholinear mechanical keyboard with a firmware in rust.
+    The case use a parametric design allowing to create a grid keyboard
+    of any size. The firmware allow you to customize each key as you wish:
+    a layer change, a key combo or a regular key.
+  image: https://raw.githubusercontent.com/TeXitoi/keyberon/master/images/keyberon.jpg
 
 # Template for new entries
 
