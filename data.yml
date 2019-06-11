@@ -24,6 +24,7 @@
   image: https://raw.githubusercontent.com/TeXitoi/keyberon/master/images/keyberon.jpg
 - name: Monotron
   website: https://github.com/thejpster/monotron
+  author: theJPster
   author_website: https://thejpster.org.uk/
   description: A simple 1980's home computer style application for the Tiva-C Launchpad
   image: https://raw.githubusercontent.com/thejpster/monotron/master/screenshot.jpg
