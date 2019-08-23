@@ -17,10 +17,10 @@
   author: TeXitoi
   author_website: https://github.com/TeXitoi/
   description: >
-    A hand wired ortholinear mechanical keyboard with a firmware in rust.
-    The case use a parametric design allowing to create a grid keyboard
-    of any size. The firmware allow you to customize each key as you wish:
-    a layer change, a key combo or a regular key.
+    A hand wired ortholinear mechanical keyboard with a firmware in Rust.
+    The case uses a parametric design allowing to create a grid keyboard
+    of any size. The firmware allows you to customize each key as you wish:
+    A layer change, a key combo or a regular key.
   image: https://raw.githubusercontent.com/TeXitoi/keyberon/master/images/keyberon.jpg
 - name: Monotron
   website: https://github.com/thejpster/monotron
