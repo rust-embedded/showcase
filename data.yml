@@ -28,6 +28,12 @@
   author_website: https://thejpster.org.uk/
   description: A simple 1980's home computer style application for the Tiva-C Launchpad
   image: https://raw.githubusercontent.com/thejpster/monotron/master/screenshot.jpg
+- name: Kroneum
+  website: https://github.com/azasypkin/kroneum
+  author: Aleh Zasypkin
+  author_website: https://github.com/azasypkin
+  description: An experimental, accessible (no GUI) and fully open source (both in code and hardware) time tracker device. The board exposes pads for I²C and SPI interfaces, acts as an USB HID device when connected to USB port and hence can be used as a playground for any custom firmware.
+  image: https://raw.githubusercontent.com/azasypkin/kroneum/master/hw/enclosure/Rev_0.5/demo/kroneum-enclosure-render.png
 
 # Template for new entries
 
