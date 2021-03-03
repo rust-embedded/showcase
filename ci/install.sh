@@ -1,7 +1,7 @@
 set -euxo pipefail
 
 main() {
-    pip install linkchecker --user
+    pip install linkchecker python-dateutil --user
 }
 
 main
