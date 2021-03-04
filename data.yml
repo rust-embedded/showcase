@@ -34,6 +34,12 @@
   author_website: https://github.com/azasypkin
   description: An experimental, accessible (no GUI) and fully open source (both in code and hardware) time tracker device. The board exposes pads for I²C and SPI interfaces, acts as an USB HID device when connected to USB port and hence can be used as a playground for any custom firmware.
   image: https://raw.githubusercontent.com/azasypkin/kroneum/master/hw/enclosure/Rev_0.5/demo/kroneum-enclosure-render.png
+- name: Moon Lamp
+  website: http://ethanfrei.com/posts/moon-lamp.html
+  author: Ethan Frei
+  author_website: http://ethanfrei.com
+  description: A smart lamp which displays the current phase of the moon.
+  image: http://ethanfrei.com/img/2021/moon-lamp-2.jpg
 
 # Template for new entries
 
