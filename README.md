@@ -18,10 +18,7 @@ to improve your code and the structure of your project!
 When you are ready send a pull-request that
 
 - Adds information about your project at the end of `data.yml`. The file
-  contains comments that will help you fill in the information; and
-
-- Adds an image or videos of your project, if not using URLs, to the `assets`
-  folder.
+  contains comments that will help you fill in the information.
 
 The resources team will review your submission and let you know if it has been
 accepted or not. If it doesn't get accepted this time but meets the hard
