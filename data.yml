@@ -40,6 +40,12 @@
   author_website: http://ethanfrei.com
   description: A smart lamp which displays the current phase of the moon.
   image: http://ethanfrei.com/img/2021/moon-lamp-2.jpg
+- name: Rusty mouse
+  website: https://github.com/brainstorm/bbtrackball-rs
+  author: Roman Valls Guimera and Josh Johnson
+  author_website: https://blogs.nopcode.org/brainstorm
+  description: A simple, interrupt-driven trackball. An stm32f04 is wired to a blackberry trackball and reads pulses from its 4 hall sensors, works on most operating systems.
+  image: https://github.com/brainstorm/bbtrackball-rs/raw/master/img/josh_studio_photo.jpg
 
 # Template for new entries
 
