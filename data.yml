@@ -44,7 +44,7 @@
   website: https://github.com/brainstorm/bbtrackball-rs
   author: Roman Valls Guimera and Josh Johnson
   author_website: https://blogs.nopcode.org/brainstorm
-  description: A simple, interrupt-driven trackball. An stm32f04 is wired to a blackberry trackball and reads pulses from its 4 hall sensors, works on most operating systems.
+  description: A simple USB trackball written in Rust RTIC (Real-Time Interrupt-driven Concurrency) framework. The code can be reused for similar mouse-like Human Interaction Devices (HID). Works well on PC and Mac computers.
   image: https://github.com/brainstorm/bbtrackball-rs/raw/master/img/josh_studio_photo.jpg
 
 # Template for new entries
