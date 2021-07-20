@@ -46,6 +46,12 @@
   author_website: https://blogs.nopcode.org/brainstorm
   description: A simple USB trackball written in Rust RTIC (Real-Time Interrupt-driven Concurrency) framework. The code can be reused for similar mouse-like Human Interaction Devices (HID). Works well on PC and Mac computers.
   image: https://github.com/brainstorm/bbtrackball-rs/raw/master/img/josh_studio_photo.jpg
+- name: Midikraken
+  website: https://github.com/Windfisch/midikraken
+  author: Florian Jung
+  author_website: https://windfis.ch
+  description: An open-source, open-hardware MIDI-USB-interface supporting up to 16 MIDI ports, more MIDI routing features to come. Firmware is written using the Rust RTIC framework.
+  image: https://github.com/Windfisch/midikraken/raw/master/hardware/img/midikraken_trs_din_ui.jpg
 
 # Template for new entries
 
