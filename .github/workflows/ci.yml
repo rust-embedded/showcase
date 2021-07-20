@@ -53,3 +53,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: public
           force_orphan: true
+          cname: showcase.rust-embedded.org
