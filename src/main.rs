@@ -2,13 +2,12 @@
 
 use std::{fs, path::Path};
 
-use chrono::{Date, NaiveDate, Utc};
+use chrono::{TimeZone, Utc};
 use exitfailure::ExitFailure;
 use failure::{bail, SyncFailure};
 use fs_extra::dir::{self, CopyOptions};
-use maplit::hashmap;
 use serde_derive::{Deserialize, Serialize};
-use tera::Tera;
+use tera::{Context, Tera};
 
 const MAX_DESCRIPTION_SIZE: usize = 280; // characters (assuming ASCII)
 
@@ -33,9 +32,9 @@ fn run() -> Result<(), failure::Error> {
 
     // rotate the project list so that the first entry is not always shown at the top
     // (we rebuild the site on a daily basis)
-    let start = Date::from_utc(NaiveDate::from_ymd(2019, 03, 04), Utc);
+    let start = Utc.with_ymd_and_hms(2019, 03, 04, 0, 0, 0).unwrap();
     let nprojects = projects.len();
-    projects.rotate_left(((Utc::today() - start).num_days() as usize) % nprojects);
+    projects.rotate_left(((Utc::now() - start).num_days() as usize) % nprojects);
 
     for project in &mut projects {
         if project.description.len() > MAX_DESCRIPTION_SIZE {
@@ -66,8 +65,10 @@ fn run() -> Result<(), failure::Error> {
         }
     }
 
+    let mut context = Context::new();
+    context.insert("projects", &projects);
     let index = tera
-        .render("index.html", &hashmap! { "projects" => projects })
+        .render("index.html", &context)
         .map_err(SyncFailure::new)?;
 
     fs::remove_dir_all("public").ok();

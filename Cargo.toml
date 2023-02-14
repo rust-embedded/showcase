@@ -1,16 +1,19 @@
 [package]
 name = "showcase"
 version = "0.1.0"
-authors = ["Jorge Aparicio <jorge@japaric.io>"]
-edition = "2018"
+authors = [
+    "Jorge Aparicio <jorge@japaric.io>",
+    "The Rust Embedded Resources Team and Contributors <resources@teams.rust-embedded.org>",
+]
+edition = "2021"
 
 [dependencies]
-tera = "0.11.20"
+tera = "1.17"
 serde_derive = "1.0.80"
 serde = "1.0.80"
-serde_yaml = "0.8.8"
+serde_yaml = "0.9.17"
 maplit = "1.0.1"
 failure = "0.1.3"
 exitfailure = "0.5.1"
 fs_extra = "1.1.0"
-chrono = "0.4.6"
+chrono = "0.4.23"
