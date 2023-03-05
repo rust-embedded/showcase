@@ -4,7 +4,7 @@
 /* - https://github.com/appernetic/hugo-nederburg-theme/blob/master/LICENSE */
 
 html {
-    background-color: #2f3360;
+    background-color: #2e2459;
     text-align: center;
 }
 
@@ -22,8 +22,8 @@ main a:hover {
 }
 
 body > header {
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+    padding-top: 2em;
+    padding-bottom: 2em;
 
     color: #fff;
     color: rgba(255, 255, 255, 0.75);
@@ -73,7 +73,7 @@ li a {
         text-align: right;
 
         position: absolute;
-        top: 1.5em;
+        top: 2em;
         right: 0;
     }
 
@@ -110,6 +110,10 @@ li a {
 
 .title > p {
     line-height: 1.5;
+}
+
+.title > a + p {
+    margin-top: 2em;
 }
 
 body {
