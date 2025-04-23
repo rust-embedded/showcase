@@ -2,18 +2,14 @@ name: CI
 
 on:
   push:
-    branches: [ staging, trying, master ]
   pull_request:
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions-rs/toolchain@v1
-        with:
-          profile: minimal
-          toolchain: stable
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
 
       - name: Install Python dependencies
         run: |
@@ -22,17 +18,14 @@ jobs:
         run: echo "~/.local/bin" >> $GITHUB_PATH
 
       - name: Cache Cargo installed binaries
-        uses: actions/cache@v1
+        uses: actions/cache@v4
         id: cache-cargo
         with:
           path: ~/cargo-bin
           key: cache-cargo
       - name: Install mdbook
         if: steps.cache-cargo.outputs.cache-hit != 'true'
-        uses: actions-rs/install@v0.1
-        with:
-          crate: mdbook
-          version: latest
+        run: cargo install mdbook
       - name: Copy mdbook to cache directory
         if: steps.cache-cargo.outputs.cache-hit != 'true'
         run: |
@@ -48,7 +41,7 @@ jobs:
 
       - name: Deploy book
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: public
