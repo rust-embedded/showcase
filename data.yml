@@ -52,6 +52,12 @@
   author_website: https://windfis.ch
   description: An open-source, open-hardware MIDI-USB-interface supporting up to 16 MIDI ports, more MIDI routing features to come. Firmware is written using the Rust RTIC framework.
   image: https://github.com/Windfisch/midikraken/raw/master/hardware/img/midikraken_trs_din_ui.jpg
+- name: Clawtype
+  website: https://github.com/akavel/clawtype
+  author: Mateusz Czapliński and Cunfusu
+  author_website: https://akavel.com
+  description: A custom wearable chorded keyboard & mouse.
+  video: https://youtu.be/N2PSiOl-auM
 
 # Template for new entries
 
