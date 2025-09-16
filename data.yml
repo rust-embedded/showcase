@@ -52,7 +52,13 @@
   author_website: https://windfis.ch
   description: An open-source, open-hardware MIDI-USB-interface supporting up to 16 MIDI ports, more MIDI routing features to come. Firmware is written using the Rust RTIC framework.
   image: https://github.com/Windfisch/midikraken/raw/master/hardware/img/midikraken_trs_din_ui.jpg
-
+- name: Embassy Clock
+  website: https://github.com/CarlKCarlK/clock
+  author: Carl Kadie & Brad Gibson
+  author_website: https://medium.com/@carlmkadie/how-rust-embassy-shine-on-embedded-devices-part-2-aad1adfccf72
+  description: "no_std Raspberry Pi Pico clock that showcases async Embassy: layered tasks handle multiplexing, blinking, and single‑button input without an RTOS. Drives a 4‑digit 7‑segment display (HH:MM/MM:SS, time‑set). Heapless types; Renode emulation included."
+  video:
+   - https://www.youtube.com/watch?v=oA63CXMFSGI
 # Template for new entries
 
   # Project name
