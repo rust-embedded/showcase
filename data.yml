@@ -57,7 +57,7 @@
   author: Carl Kadie & Brad Gibson
   author_website: https://medium.com/@carlmkadie/how-rust-embassy-shine-on-embedded-devices-part-2-aad1adfccf72
   description: "no_std Raspberry Pi Pico clock that showcases async Embassy: layered tasks handle multiplexing, blinking, and single‑button input without an RTOS. Drives a 4‑digit 7‑segment display (HH:MM/MM:SS, time‑set). Heapless types; Renode emulation included."
-  image: embassy-clock.jpgs
+  image: embassy-clock.jpg
 # Template for new entries
 
   # Project name
