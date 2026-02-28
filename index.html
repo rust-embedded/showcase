@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link href="css/reset.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <meta charset="utf-8">
+    <meta name="description" content="Awesome embedded projects by the Rust community!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#2f3360" />
+    <title>Embedded Rust Showcase</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="title">
+        <a href="">Embedded Rust Showcase</a>
+
+        <p>
+          Awesome embedded projects by the Rust community!
+        </p>
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="https://rust-embedded.org">Learn</a>
+          </li>
+          <li>
+            <a href="https://github.com/rust-embedded/awesome-embedded-rust">Build</a>
+          </li>
+          <li>
+            <a href="https://github.com/rust-embedded/showcase">Submit</a>
+          </li>
+        </ul>
+      </div>
+
+    </header>
+
+    <main>
+    
+      <article
+        class="odd"
+        id="rusty-mouse">
+      
+
+      
+        <figure style="background-image:url(https:&#x2F;&#x2F;github.com&#x2F;brainstorm&#x2F;bbtrackball-rs&#x2F;raw&#x2F;master&#x2F;img&#x2F;josh_studio_photo.jpg)">
+          <a href="https:&#x2F;&#x2F;github.com&#x2F;brainstorm&#x2F;bbtrackball-rs"><span></span></a>
+        </figure>
+      
+
+        <div class="vcenter">
+          <section>
+            <header>
+              <a href="#rusty-mouse">Rusty mouse</a>
+            </header>
+
+            <p class="author">
+              by <span><a href="https:&#x2F;&#x2F;blogs.nopcode.org&#x2F;brainstorm">Roman Valls Guimera and Josh Johnson</a></span>
+            </p>
+
+            <p class="description">
+              A simple USB trackball written in Rust RTIC (Real-Time Interrupt-driven Concurrency) framework. The code can be reused for similar mouse-like Human Interaction Devices (HID). Works well on PC and Mac computers.
+            </p>
+
+            <footer>
+              <a href="https:&#x2F;&#x2F;github.com&#x2F;brainstorm&#x2F;bbtrackball-rs">Learn more</a>
+            </footer>
+          </section>
+        </div>
+      </article>
+    
+      <article
+        class="even"
+        id="midikraken">
+      
+
+      
+        <figure style="background-image:url(https:&#x2F;&#x2F;github.com&#x2F;Windfisch&#x2F;midikraken&#x2F;raw&#x2F;master&#x2F;hardware&#x2F;img&#x2F;midikraken_trs_din_ui.jpg)">
+          <a href="https:&#x2F;&#x2F;github.com&#x2F;Windfisch&#x2F;midikraken"><span></span></a>
+        </figure>
+      
+
+        <div class="vcenter">
+          <section>
+            <header>
+              <a href="#midikraken">Midikraken</a>
+            </header>
+
+            <p class="author">
+              by <span><a href="https:&#x2F;&#x2F;windfis.ch">Florian Jung</a></span>
+            </p>
+
+            <p class="description">
+              An open-source, open-hardware MIDI-USB-interface supporting up to 16 MIDI ports, more MIDI routing features to come. Firmware is written using the Rust RTIC framework.
+            </p>
+
+            <footer>
+              <a href="https:&#x2F;&#x2F;github.com&#x2F;Windfisch&#x2F;midikraken">Learn more</a>
+            </footer>
+          </section>
+        </div>
+      </article>
+    
+      <article
+        class="odd"
+        id="embassy-clock">
+      
+
+      
+        <figure style="background-image:url(assets&#x2F;embassy-clock.jpg)">
+          <a href="https:&#x2F;&#x2F;github.com&#x2F;CarlKCarlK&#x2F;clock"><span></span></a>
+        </figure>
+      
+
+        <div class="vcenter">
+          <section>
+            <header>
+              <a href="#embassy-clock">Embassy Clock</a>
+            </header>
+
+            <p class="author">
+              by <span><a href="https:&#x2F;&#x2F;medium.com&#x2F;@carlmkadie&#x2F;how-rust-embassy-shine-on-embedded-devices-part-2-aad1adfccf72">Carl Kadie &amp; Brad Gibson</a></span>
+            </p>
+
+            <p class="description">
+              no_std Raspberry Pi Pico clock that showcases async Embassy: layered tasks handle multiplexing, blinking, and single‑button input without an RTOS. Drives a 4‑digit 7‑segment display (HH:MM&#x2F;MM:SS, time‑set). Heapless types; Renode emulation included.
+            </p>
+
+            <footer>
+              <a href="https:&#x2F;&#x2F;github.com&#x2F;CarlKCarlK&#x2F;clock">Learn more</a>
+            </footer>
+          </section>
+        </div>
+      </article>
+    
+      <article
+        class="even"
+        id="rusty-clock">
+      
+
+      
+        <figure style="background-image:url(https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;TeXitoi&#x2F;rusty-clock&#x2F;master&#x2F;images&#x2F;front.jpg)">
+          <a href="https:&#x2F;&#x2F;github.com&#x2F;TeXitoi&#x2F;rusty-clock"><span></span></a>
+        </figure>
+      
+
+        <div class="vcenter">
+          <section>
+            <header>
+              <a href="#rusty-clock">Rusty clock</a>
+            </header>
+
+            <p class="author">
+              by <span><a href="https:&#x2F;&#x2F;github.com&#x2F;TeXitoi&#x2F;">TeXitoi</a></span>
+            </p>
+
+            <p class="description">
+              An alarm clock in pure bare metal embedded rust (no OS). It features pressure, temperature, humidity, monophonic alarm on a e-paper display. The 5 programmable alarms can ring one time (and never repeat) or every week day that you want (for example only Monday and Thursday).
+            </p>
+
+            <footer>
+              <a href="https:&#x2F;&#x2F;github.com&#x2F;TeXitoi&#x2F;rusty-clock">Learn more</a>
+            </footer>
+          </section>
+        </div>
+      </article>
+    
+      <article
+        class="odd"
+        id="e-paper-conference-badge">
+      
+
+      
+        <figure style="background-image:url(https:&#x2F;&#x2F;www.wezm.net&#x2F;images&#x2F;2019&#x2F;badge-at-end-of-conference_thumb.jpg)">
+          <a href="https:&#x2F;&#x2F;www.wezm.net&#x2F;technical&#x2F;2019&#x2F;01&#x2F;linux-conf-au-rust-epaper-badge&#x2F;"><span></span></a>
+        </figure>
+      
+
+        <div class="vcenter">
+          <section>
+            <header>
+              <a href="#e-paper-conference-badge">e-Paper Conference Badge</a>
+            </header>
+
+            <p class="author">
+              by <span><a href="https:&#x2F;&#x2F;www.wezm.net&#x2F;">Wesley Moore</a></span>
+            </p>
+
+            <p class="description">
+              A tri-color e-Paper display on a battery powered Raspberry Pi Zero W controlled by a Rust program using the embedded-hal ecosystem on Linux. The badge serves content over HTTP and allows people to increment a hello counter on the display.
+            </p>
+
+            <footer>
+              <a href="https:&#x2F;&#x2F;www.wezm.net&#x2F;technical&#x2F;2019&#x2F;01&#x2F;linux-conf-au-rust-epaper-badge&#x2F;">Learn more</a>
+            </footer>
+          </section>
+        </div>
+      </article>
+    
+      <article
+        class="even"
+        id="keyberon">
+      
+
+      
+        <figure style="background-image:url(https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;TeXitoi&#x2F;keyberon&#x2F;master&#x2F;images&#x2F;keyberon.jpg)">
+          <a href="https:&#x2F;&#x2F;github.com&#x2F;TeXitoi&#x2F;keyberon"><span></span></a>
+        </figure>
+      
+
+        <div class="vcenter">
+          <section>
+            <header>
+              <a href="#keyberon">Keyberon</a>
+            </header>
+
+            <p class="author">
+              by <span><a href="https:&#x2F;&#x2F;github.com&#x2F;TeXitoi&#x2F;">TeXitoi</a></span>
+            </p>
+
+            <p class="description">
+              A hand wired ortholinear mechanical keyboard with a firmware in Rust. The case uses a parametric design allowing to create a grid keyboard of any size. The firmware allows you to customize each key as you wish: A layer change, a key combo or a regular key.
+
+            </p>
+
+            <footer>
+              <a href="https:&#x2F;&#x2F;github.com&#x2F;TeXitoi&#x2F;keyberon">Learn more</a>
+            </footer>
+          </section>
+        </div>
+      </article>
+    
+      <article
+        class="odd"
+        id="monotron">
+      
+
+      
+        <figure style="background-image:url(https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;thejpster&#x2F;monotron&#x2F;master&#x2F;screenshot.jpg)">
+          <a href="https:&#x2F;&#x2F;github.com&#x2F;thejpster&#x2F;monotron"><span></span></a>
+        </figure>
+      
+
+        <div class="vcenter">
+          <section>
+            <header>
+              <a href="#monotron">Monotron</a>
+            </header>
+
+            <p class="author">
+              by <span><a href="https:&#x2F;&#x2F;thejpster.org.uk&#x2F;">theJPster</a></span>
+            </p>
+
+            <p class="description">
+              A simple 1980&#x27;s home computer style application for the Tiva-C Launchpad
+            </p>
+
+            <footer>
+              <a href="https:&#x2F;&#x2F;github.com&#x2F;thejpster&#x2F;monotron">Learn more</a>
+            </footer>
+          </section>
+        </div>
+      </article>
+    
+      <article
+        class="even"
+        id="kroneum">
+      
+
+      
+        <figure style="background-image:url(https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;azasypkin&#x2F;kroneum&#x2F;master&#x2F;hw&#x2F;enclosure&#x2F;Rev_0.5&#x2F;demo&#x2F;kroneum-enclosure-render.png)">
+          <a href="https:&#x2F;&#x2F;github.com&#x2F;azasypkin&#x2F;kroneum"><span></span></a>
+        </figure>
+      
+
+        <div class="vcenter">
+          <section>
+            <header>
+              <a href="#kroneum">Kroneum</a>
+            </header>
+
+            <p class="author">
+              by <span><a href="https:&#x2F;&#x2F;github.com&#x2F;azasypkin">Aleh Zasypkin</a></span>
+            </p>
+
+            <p class="description">
+              An experimental, accessible (no GUI) and fully open source (both in code and hardware) time tracker device. The board exposes pads for I²C and SPI interfaces, acts as an USB HID device when connected to USB port and hence can be used as a playground for any custom firmware.
+            </p>
+
+            <footer>
+              <a href="https:&#x2F;&#x2F;github.com&#x2F;azasypkin&#x2F;kroneum">Learn more</a>
+            </footer>
+          </section>
+        </div>
+      </article>
+    
+      <article
+        class="odd"
+        id="moon-lamp">
+      
+
+      
+        <figure style="background-image:url(http:&#x2F;&#x2F;ethanfrei.com&#x2F;img&#x2F;2021&#x2F;moon-lamp-2.jpg)">
+          <a href="http:&#x2F;&#x2F;ethanfrei.com&#x2F;posts&#x2F;moon-lamp.html"><span></span></a>
+        </figure>
+      
+
+        <div class="vcenter">
+          <section>
+            <header>
+              <a href="#moon-lamp">Moon Lamp</a>
+            </header>
+
+            <p class="author">
+              by <span><a href="http:&#x2F;&#x2F;ethanfrei.com">Ethan Frei</a></span>
+            </p>
+
+            <p class="description">
+              A smart lamp which displays the current phase of the moon.
+            </p>
+
+            <footer>
+              <a href="http:&#x2F;&#x2F;ethanfrei.com&#x2F;posts&#x2F;moon-lamp.html">Learn more</a>
+            </footer>
+          </section>
+        </div>
+      </article>
+    
+    </main>
+  </body>
+</html>
